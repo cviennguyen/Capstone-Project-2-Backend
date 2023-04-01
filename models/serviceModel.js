@@ -31,11 +31,7 @@ const servicesSchema = new mongoose.Schema(
     },
     ratingsQuantity: {
       type: Number,
-<<<<<<< HEAD
       default: 0,
-=======
-      default: 1,
->>>>>>> 30c05cc2b48c3eefca678cceaa2abe7196dd4bb1
     },
     description: {
       type: String,
