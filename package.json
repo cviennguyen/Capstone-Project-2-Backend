@@ -1,0 +1,40 @@
+{
+  "name": "week06-mongodb-notes-app",
+  "version": "1.0.0",
+  "description": "Week06 Exercise as note taking application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "expressJS",
+    "nodeJS",
+    "week06",
+    "API",
+    "mongoDB",
+    "REST",
+    "mongoose",
+    "notes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cviennguyen/101347350_COMP3123_Assignment1.git"
+  },
+  "author": "Pritesh Patel",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.16.3",
+    "gh-pages": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.2.8",
+    "slugify": "^1.6.5",
+    "travis": "^0.1.1",
+    "validator": "^13.7.0"
+  }
+}
