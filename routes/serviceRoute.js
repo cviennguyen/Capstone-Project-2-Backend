@@ -4,6 +4,10 @@ const authController = require("../controllers/authController");
 const router = express.Router();
 const reviewController = require("../controllers/reviewController");
 const favoriteController = require("../controllers/favoriteController");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30c05cc2b48c3eefca678cceaa2abe7196dd4bb1
 router
   .route("/")
   .get(authController.protect, serviceController.getAllServices)
@@ -17,7 +21,15 @@ router
     authController.restrictTo("admin", "serviceProvider"),
     serviceController.updateService
   )
+<<<<<<< HEAD
   .delete(authController.protect, serviceController.deleteService);
+=======
+  .delete(
+    authController.protect,
+    authController.restrictTo("admin", "serviceProvider"),
+    serviceController.deleteService
+  );
+>>>>>>> 30c05cc2b48c3eefca678cceaa2abe7196dd4bb1
 
 router
   .route("/:serviceId/review")

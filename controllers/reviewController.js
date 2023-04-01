@@ -14,6 +14,7 @@ exports.getAllReview = catchAsync(async (req, res, next) => {
   });
 });
 
+<<<<<<< HEAD
 //delete Review
 exports.deleteReview = catchAsync(async (req, res, next) => {
   await Review.findByIdAndDelete(req.params.id);
@@ -24,6 +25,8 @@ exports.deleteReview = catchAsync(async (req, res, next) => {
   });
 });
 
+=======
+>>>>>>> 30c05cc2b48c3eefca678cceaa2abe7196dd4bb1
 exports.createReview = catchAsync(async (req, res, next) => {
   if (!req.body.service) req.body.service = req.params.serviceId;
   if (!req.body.user) req.body.user = req.user._id;
